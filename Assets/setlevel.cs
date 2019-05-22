@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
+using PLAN;
 
 public class setlevel : MonoBehaviour
 {
@@ -20,6 +21,12 @@ public class setlevel : MonoBehaviour
     {
 
     }
+
+    public PNumber test;
+
+    public PRuntime runtime;
+
+    public string homeid;
 
 
     public void SetValue(float value)
