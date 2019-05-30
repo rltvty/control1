@@ -14,8 +14,10 @@ public class receiveLevel : MonoBehaviour
 
     bool running = false;
 
+    /*
     async void Update()
     {
+
         if (!running) {
             running = true;
             try
@@ -37,11 +39,11 @@ public class receiveLevel : MonoBehaviour
                         }
                         ArraySegment<byte> bytesToSend = new ArraySegment<byte>(Encoding.UTF8.GetBytes(msg));
                         await ws.SendAsync(bytesToSend, WebSocketMessageType.Text, true, CancellationToken.None);
-                        */
+                        */ /*
                         ArraySegment<byte> bytesReceived = new ArraySegment<byte>(new byte[1024]);
                         WebSocketReceiveResult result = await ws.ReceiveAsync(bytesReceived, CancellationToken.None);
                         String value = Encoding.UTF8.GetString(bytesReceived.Array, 0, result.Count);
-                        //Debug.Log(value);
+                        //Debug.Log(value); 
                         slider.value = float.Parse(value);
                     }
                 }
@@ -52,4 +54,5 @@ public class receiveLevel : MonoBehaviour
             }
         }
     }
+    */
 }
